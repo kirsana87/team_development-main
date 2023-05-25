@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_pill_item_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_pill_item_height"
+    android:layout_margin="@dimen/list_item_margin"
+    app:cardBackgroundColor="@color/cards_background"
+    app:cardCornerRadius="@dimen/search_pill_item_corner_radius">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/list_item_card_layout_margin">
+
+        <TextView
+            android:id="@+id/search_pill_item_pill_name_text_view"
+            android:layout_width="@dimen/zero_value"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="@font/roboto_medium"
+            android:maxLines="2"
+            android:textColor="@color/header_dark_grey"
+            android:textSize="@dimen/search_pill_item_pill_title_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/pill_name_example" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

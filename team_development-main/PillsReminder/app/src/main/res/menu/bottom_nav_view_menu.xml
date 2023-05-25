@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_navigate_to_pills_list"
+        android:icon="@drawable/ic_pills_list"
+        android:title="@string/pills_list_title" />
+
+    <item
+        android:id="@+id/action_navigate_to_schedule_calendar"
+        android:icon="@drawable/ic_calendar"
+        android:title="@string/schedule_calendar_title" />
+</menu>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/zero_value"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/day_1st"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_monday"
+        app:layout_constraintEnd_toStartOf="@id/day_2nd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_2nd"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_tuesday"
+        app:layout_constraintEnd_toStartOf="@id/day_3rd"
+        app:layout_constraintStart_toEndOf="@id/day_1st"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_3rd"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_wednesday"
+        app:layout_constraintEnd_toStartOf="@id/day_4th"
+        app:layout_constraintStart_toEndOf="@id/day_2nd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_4th"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_thursday"
+        app:layout_constraintEnd_toStartOf="@id/day_5th"
+        app:layout_constraintStart_toEndOf="@id/day_3rd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_5th"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_friday"
+        app:layout_constraintEnd_toStartOf="@id/day_6th"
+        app:layout_constraintStart_toEndOf="@id/day_4th"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_6th"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_saturday"
+        app:layout_constraintEnd_toStartOf="@id/day_7th"
+        app:layout_constraintStart_toEndOf="@id/day_5th"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/day_7th"
+        style="@style/calendarDaysHeaderStyle"
+        android:text="@string/header_sunday"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/day_6th"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

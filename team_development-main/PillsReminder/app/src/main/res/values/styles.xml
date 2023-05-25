@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HeaderStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/header_dark_grey</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="SettingStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/header_dark_grey</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="PickerSettingStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:textColor">@color/settings_picker</item>
+    </style>
+
+    <style name="arrowButtonStyle">
+        <item name="android:background">?colorPrimary</item>
+        <item name="tint">@color/white</item>
+        <item name="android:layout_width">@dimen/arrow_button_size</item>
+        <item name="android:layout_height">@dimen/arrow_button_size</item>
+    </style>
+
+    <style name="calendarCardItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clickable">true</item>
+        <item name="cardBackgroundColor">@color/calendar_item</item>
+        <item name="cardCornerRadius">@dimen/calendar_card_item_corner_radius</item>
+    </style>
+
+    <style name="calendarLegendTextStyle">
+        <item name="android:layout_width">@dimen/zero_value</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/calendar_legend_text_size</item>
+        <item name="layout_constraintWidth_percent">0.20</item>
+        <item name="layout_constraintHorizontal_chainStyle">packed</item>
+    </style>
+
+    <style name="calendarLegendViewStyle">
+        <item name="android:layout_width">@dimen/calendar_legend_view_size</item>
+        <item name="android:layout_height">@dimen/calendar_legend_view_size</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+        <item name="layout_constraintHorizontal_chainStyle">packed</item>
+    </style>
+
+    <style name="calendarDaysHeaderStyle">
+        <item name="android:layout_width">@dimen/zero_value</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/calendar_days_header_text_size</item>
+    </style>
+
+    <style name="pillsBottomNavigationStyle" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="backgroundTint">@color/app_primary</item>
+        <item name="itemIconTint">@color/bottom_navigation_item_colors</item>
+        <item name="itemTextColor">@color/bottom_navigation_item_colors</item>
+    </style>
+
+</resources>

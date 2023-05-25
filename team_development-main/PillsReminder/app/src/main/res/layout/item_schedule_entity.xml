@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/item_history_margin"
+    android:layout_height="wrap_content"
+    android:background="@color/calendar_item"
+    android:padding="@dimen/item_history_padding">
+
+    <View
+        android:id="@+id/schedule_entity_medication_marker_view"
+        android:layout_width="@dimen/item_history_marker_width"
+        android:layout_height="@dimen/zero_value"
+        android:background="@color/planned_medication"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/schedule_entity_time_text_view"
+        android:layout_width="@dimen/zero_value"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_4dp"
+        android:textColor="@color/white_90"
+        android:textSize="@dimen/item_history_text_size"
+        app:layout_constraintEnd_toStartOf="@+id/schedule_entity_success_flag_text_view"
+        app:layout_constraintStart_toEndOf="@id/schedule_entity_medication_marker_view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="lorem" />
+
+    <TextView
+        android:id="@+id/schedule_entity_success_flag_text_view"
+        android:layout_width="@dimen/zero_value"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white_90"
+        android:gravity="end"
+        android:text="@string/medication_failure_message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/schedule_entity_time_text_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
